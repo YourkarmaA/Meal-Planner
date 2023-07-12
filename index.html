@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="https://clipart-library.com/newhp/kell-aiello-rhn-letseatgif.gif" alt="Logo">
+    </div>
+  </nav>
+</header>
+
+
+<body>
+  <form id="user-form">
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" name="weight" required>
+    
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" name="height" required>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    
+    <label for="activity">Physical Activity Level:</label>
+    <select id="activity" name="activity" required>
+      <option value="light">Light</option>
+      <option value="moderate">Moderate</option>
+      <option value="active">Active</option>
+    </select>
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <br>
+
+  <section id="meal-plan">
+    <h2>MEAL PLAN</h2>
+    <div class="meal-card">
+      <img src="breakfast.jpg" alt="Breakfast">
+      <h3>Breakfast Meal</h3>
+      <p>Calories: 300</p>
+      <button class="get-recipe">Get Recipe</button>
+    </div>
+    <div class="meal-card">
+      <img src="lunch.jpg" alt="Lunch">
+      <h3>Lunch Meal</h3>
+      <p>Calories: 500</p>
+      <button class="get-recipe">Get Recipe</button>
+    </div>
+    <div class="meal-card">
+      <img src="dinner.jpg" alt="Dinner">
+      <h3>Dinner Meal</h3>
+      <p>Calories: 700</p>
+      <button class="get-recipe">Get Recipe</button>
+    </div>
+  </section>
+  
+  <section id="recipe-section">
+    <h2>RECIPE</h2>
+    <div class="recipe-tabs">
+      <button class="tab-btn active" data-tab="ingredients">Ingredients</button>
+      <button class="tab-btn" data-tab="steps">Steps</button>
+    </div>
+    <div class="tab-content">
+      <div id="ingredients" class="tab-panel active">
+        <ul>
+          <li>Ingredient 1 - 100g</li>
+          <li>Ingredient 2 - 200ml</li>
+          <li>Ingredient 3 - 2 tsp</li>
+        </ul>
+      </div>
+      <div id="steps" class="tab-panel">
+        <ol>
+          <li>Step 1: Lorem ipsum dolor sit amet.</li>
+          <li>Step 2: Consectetur adipiscing elit.</li>
+          <li>Step 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <script src="./script.js"> </script>
+  
+</body>
+</html>
